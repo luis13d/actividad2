@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__overlay"></div>
+        <div class="header__item_container">
+            <img src="../assets/luisDiazP.jpeg" alt="luis diaz" class="header__img">
+            <h1>Bienvenido a mi portafolio</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius enim quod eum cum dolore ipsum dolor,
+                quidem voluptatum? Alias nobis tempore ex consequatur corporis praesentium, libero itaque laboriosam non
+                ratione.Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+
+        </div>
+    </header>
+    <div class="navbar-container">
+        <nav class="navbar navbar-expand-lg fixed-top mb-1 navbar-custom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/img/International_Pokémon_logo.svg.webp" alt="" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#introduccion">Introducción</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experiencias">Experiencias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#proyectos">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contactame">Contactame</a>
+                        </li>
+                    </ul>
+                    <div> <img src="" alt=""> </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <main>
+        <section class="section-2"  id="introduccion">
+            <h2>Introducción</h2>
+            <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae architecto quo autem aliquid
+                    nesciunt. Blanditiis veritatis ab, non quasi nisi ratione! Sint consequuntur minima possimus
+                    deserunt numquam, iste dignissimos enim!</span><span>Pariatur eaque dignissimos nostrum quibusdam?
+                    Error, consequatur eveniet culpa similique eius a quam iusto quos ullam veniam expedita laudantium
+                    omnis sint tempore magnam tenetur voluptatum pariatur quo nisi modi saepe!</span>
+                span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae architecto quo autem aliquid
+                nesciunt. Blanditiis veritatis ab, non quasi nisi ratione! Sint consequuntur minima possimus
+                deserunt numquam, iste dignissimos enim!</span><span>Pariatur eaque dignissimos nostrum quibusdam?
+                    Error, consequatur eveniet culpa similique eius a quam iusto quos ullam veniam expedita laudantium
+                    omnis sint tempore magnam tenetur voluptatum pariatur quo nisi modi saepe!</span>span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae architecto quo autem aliquid
+                    nesciunt. Blanditiis veritatis ab, non quasi nisi ratione! Sint consequuntur minima possimus
+                    deserunt numquam, iste dignissimos enim!</span><span>Pariatur eaque dignissimos nostrum quibusdam?
+                        Error, consequatur eveniet culpa similique eius a quam iusto quos ullam veniam expedita laudantium
+                        omnis sint tempore magnam tenetur voluptatum pariatur quo nisi modi saepe!</span></p>
+        </section>
+        <section class="section-2" id="experiencias">
+            <h2>Experiencias</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet impedit nobis nesciunt quos dicta explicabo quaerat, fugiat vero neque consequuntur, voluptatem repellendus perspiciatis accusamus. Sed officiis aliquam illum dicta et?
+                Nemo nulla et cumque tenetur! Veniam sit commodi nisi explicabo sunt ratione, harum fugit illo corrupti distinctio ut, modi quia doloremque aliquam cupiditate eos vitae? Expedita debitis ipsum laborum harum!
+                Sed, molestias distinctio praesentium magni deserunt, ad excepturi repellat aperiam ducimus, eos nemo voluptates iusto. Libero nulla doloremque enim quos rem, vitae ex ea harum. Repudiandae cumque vel facilis ipsa?</p>
+        </section>
+
+        <!-- Carrusel -->
+        <section id="proyectos">
+            <article>
+                <h2>Proyectos</h2>
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./assets/laptop.webp" class="d-block" alt="..." data-bs-toggle="modal"
+                                data-bs-target="#exampleModal" onclick="modalcito(0)" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/laptop2.webp" class="d-block" alt="..." data-bs-toggle="modal"
+                                data-bs-target="#exampleModal" onclick="modalcito(1)" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/laptop4.webp" class="d-block" alt="..." data-bs-toggle="modal"
+                                data-bs-target="#exampleModal" onclick="modalcito(2)" />
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev bg-black" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next bg-black" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </article>
+            <!-- Fin Carrusel -->
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                Modal title
+                            </h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="..." alt="">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                Close
+                            </button>
+                            <a href="https://www.google.com"><button type="button" class="btn btn-primary">
+                                    Repo Github
+                                </button></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fin Modal -->
+        </section>
+
+        <section id="contactame">
+            <article>
+                <h2>Contáctame</h2>
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4" />
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="inputPassword4" />
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label">Dirección</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Apoquindo 7560, las Condes" />
+                    </div>
+                    <!-- <div class="col-12">
+                        <label for="inputAddress2" class="form-label">Address 2</label>
+                        <input type="text" class="form-control" id="inputAddress2"
+                            placeholder="Apartment, studio, or floor" />
+                    </div> -->
+                    <div class="col-md-6">
+                        <label for="inputCity" class="form-label">Región</label>
+                        <input type="text" class="form-control" id="inputCity" placeholder="Región Metropolitana"/>
+                    </div>
+                    <!-- <div class="col-md-4">
+                        <label for="inputState" class="form-label">State</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                        </select>
+                    </div> -->
+                    <!-- <div class="col-md-2">
+                        <label for="inputZip" class="form-label">Zip</label>
+                        <input type="text" class="form-control" id="inputZip" />
+                    </div> -->
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck" />
+                            <label class="form-check-label" for="gridCheck">
+                                marcar
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary" id="submitBtn">Enviar</button>
+                    </div>
+                </form>
+            </article>
+        </section>
+    </main>
+    <!-- 
+    <div>
+        <nav></nav>
+    </div> -->
+
+</body>
+<footer class="footer">
+    <div class="footer-content">
+        <p>&copy; 2024 Luis Díaz. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="./assets/js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+</html>

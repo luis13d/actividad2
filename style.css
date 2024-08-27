@@ -1,0 +1,235 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background-color: #30384170;
+    color: #fff;
+}
+
+.header {
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-image: url("../assets/laptop4.webp");
+    background-repeat: no-repeat;
+    display: flex;
+    background-size: cover;
+}
+
+.header__overlay {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #4B4B4B80;
+    position: absolute;
+    z-index: 1;
+}
+
+.header__item_container {
+    position: relative;
+    z-index: 10;
+    margin: auto;
+    text-align: center;
+    max-width: 700px;
+}
+
+.header__img {
+    min-height: 150px;
+    max-width: 35%;
+    margin: 80px;
+    border-radius: 50%;
+    border: solid 6px #fff;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3rem;
+    text-wrap: balance;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: left;
+    text-wrap: balance;
+}
+
+section {
+    min-height: 100vh;
+    padding-top: 4rem;
+}
+
+.navbar-custom {
+    background-color: #fff;
+}
+
+.navbar-nav .nav-link {
+    color: rgb(77, 74, 74);
+}
+
+/* Estilos generales para el carrusel */
+.carousel-inner {
+    display: flex;
+    /* justify-content: center;
+    align-items: center;*/
+    height: 100vh;
+    /* Ocupa la altura completa de la pantalla */
+    /* background-color: #4B4B4B; */
+    /* Fondo para la transición con el header */
+}
+
+.carousel-item img {
+    max-width: 100%;
+    /* Ajusta la imagen al ancho máximo de la pantalla */
+    max-height: 100%;
+    /* Ajusta la imagen a la altura máxima de la pantalla */
+    object-fit: contain;
+    /* Mantiene las proporciones de la imagen */
+    margin: auto;
+    /* Centra la imagen */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    /* Ancho de los controles del carrusel */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo semi-transparente para los controles */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+    /* Asegura que los íconos sean visibles sobre fondos oscuros */
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .carousel-inner {
+        height: 50vh;
+        /* Reduce la altura del carrusel en pantallas pequeñas */
+    }
+
+    .carousel-item img {
+        max-height: 50vh;
+        min-width: 50vw;
+        /* Ajusta la imagen a la altura reducida del carrusel */
+    }
+}
+
+.navbar-custom {
+    transition: all 0.4s ease;
+    /* Transición suave para los cambios */
+    background-color: white;
+    /* Fondo blanco original */
+    color: grey;
+    /* Letras grises originales */
+    padding: 0.8rem 2rem;
+    /* Tamaño original */
+}
+
+.navbar-custom .nav-link {
+    color: grey;
+    /* Color de las letras en el estado original */
+    transition: color 0.3s ease, transform 0.3s ease;
+    /* padding: 0.5rem 1rem; border-radius 0.3s ease*/
+    /* Agrega espacio alrededor del texto */
+}
+
+/* Transición suave para el color de las letras */
+
+
+.navbar-custom .nav-link:hover {
+    color: #007bff;
+    /* Cambia el color al pasar el mouse */
+    transform: scale(1.1);
+    /* Aumenta ligeramente el tamaño del texto */
+    /* border-radius: 12px; */
+    /* Borde redondeado al pasar el mouse */
+    /* background-color: #f0f0f0; */
+    /* Opción para un color de fondo diferente al hacer hover */
+}
+
+.navbar-shrink {
+    background-color: #4B4B4B;
+    /* Fondo gris oscuro al hacer scroll */
+    color: white;
+    /* Letras blancas al hacer scroll */
+    padding: 0.5rem 2rem;
+    /* Tamaño reducido al hacer scroll */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra para darle profundidad */
+}
+
+.navbar-shrink .nav-link {
+    color: white;
+    /* Color de las letras en el estado reducido */
+}
+
+#submitBtn {
+    background-color: #007bff;
+    /* Color de fondo inicial (azul) */
+    color: white;
+    /* Color del texto */
+    border: none;
+    /* Sin borde */
+    padding: 0.75rem 1.5rem;
+    /* Espaciado dentro del botón */
+    font-size: 1rem;
+    /* Tamaño del texto */
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    /* Transición para el color de fondo y transformación */
+}
+
+#submitBtn:hover {
+    background-color: #a85f1a;
+    /* Color de fondo al pasar el mouse (azul más oscuro) */
+    transform: scale(1.05);
+    /* Escala ligeramente el botón al pasar el mouse */
+}
+
+/* estilo del footer */
+.footer {
+    background-color: #4B4B4B;
+    /* Fondo gris oscuro */
+    color: white;
+    /* Color de las letras en blanco */
+    text-align: center;
+    /* Centra el texto */
+    padding: 1rem 0;
+    /* Espaciado arriba y abajo */
+    position: relative;
+    /* Posición relativa para ajustes */
+    bottom: 0;
+    /* Asegura que el footer esté al final de la página */
+    width: 100%;
+    /* Ocupa el 100% del ancho */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+    /* Sombra para darle profundidad */
+    font-family: 'Arial', sans-serif;
+    /* Fuente para el texto */
+}
+
+.footer p {
+    margin: 0;
+    /* Quita el margen */
+    font-size: 1rem;
+    /* Tamaño del texto */
+    line-height: 1.5rem;
+    /* Altura de línea */
+}
+
+.footer a {
+    color: #fff;
+    /* Color de los enlaces en blanco */
+    text-decoration: none;
+    /* Quita la subrayado */
+    transition: color 0.3s ease;
+    /* Transición suave para los enlaces */
+}
+
+.footer a:hover {
+    color: #CCCCCC;
+    /* Color de los enlaces al pasar el mouse */
+}
